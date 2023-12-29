@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>商品詳細</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="box">
+       <ul class="list">
+         <li><a href="profile.html">網頁簡介</a></li>
+         <li><a href="products.html">商品預覽</a></li>
+         <li><a href="about-us.html">關於我們</a></li>
+         <li><a href="index.html"><img src="logo.png" alt="" class="logo"></a></li>
+         <li><a href="member-information.html">會員資料</a></li>
+         <li class="dropdown">
+         <a href="#" class="dropdown-btn">登入/註冊</a>
+         <ul class="dropdown-content">
+          <li><a href="login.html">登入會員</a></li>
+          <li><a href="signup.html">註冊會員</a></li>
+        </ul>
+         <li><a href="cart.html"><img src="cart.png" alt=""class="cart-img"></a></li>
+        
+       </ul>
+     </div>
+    </header>
+    
+    <div class="product-detail">
+      <img src="strawberry-daihuku.jpg">
+         <a class="product-name">大福草莓<br></a>
+         <a class="product-price">售價<br></a>
+         <a class="product-NT">NT$:40<br></a>
+         <a class="product-number"> 數量<br></a>
+         <a class="how-many"><input type="number" id="number-field">
+         個</a><br>
+         <a class="explanation">商品説明：<br></a>
+         <a class="explanation-word">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>aaaaaaaaaaaaa<br>aaaaaaaaaaaaaaaaaaaaa</a> <br>
+        <a href="#" class="add-cart">加入購物車</a><br></div>
+<div class="review-column">
+<div class="review">
+  <div class="review-title">
+   商品評論
+  </div>
+    <div class="stars">
+        <span>
+          <input id="review1" type="radio" name="review-star"><label for="review1">★</label>
+          <input id="review2" type="radio" name="review-star"><label for="review2">★</label>
+          <input id="review3" type="radio" name="review-star"><label for="review3">★</label>
+          <input id="review4" type="radio" name="review-star"><label for="review4">★</label>
+          <input id="review5" type="radio" name="review-star"><label for="review5">★</label>
+        </span>
+      </div>
+   <div class="content">
+   comment:<br></div> 
+   <textarea name="ID" type="text"class="write-content"></textarea>
+   <div class="review-button">
+   <button class="send"><a href="#">送出</a></button>
+ <button class="cancel"><a href="#">取消</a></button>
+</div></div>
+<div class="customer-reviews">
+ <div class="customer-title">comment</div>
+   <div class="customer-name">久保匠生</div>
+ <a class="stars-1">★</a>
+ <a class="stars-1">★</a>
+ <a class="stars-1">★</a>
+ <a class="stars-1">★</a>
+ <a class="stars-1">★</a>
+ 
+ <div class="customer-comment">
+   aaaaaaaaaaaaaaaaaaaaa<br>
+   aaaaaaaaaaaaaaaaaaaaa
+ </div>
+ <div class="customer-name">久保匠</div>
+ <a class="stars-1">★</a>
+ <a class="stars-1">★</a>
+ <a class="stars-1">★</a>
+ <a class="stars-1">★</a>
+ <a class="stars-2">★</a>
+ 
+ <div class="customer-comment">
+   aaaaaaaaaaaaaaaaaaaaa<br>
+   aaaaaaaaaaaaaaaaaaaaa
+ </div>
+ <div class="customer-name">久保</div>
+ <a class="stars-1">★</a>
+ <a class="stars-1">★</a>
+ <a class="stars-1">★</a>
+ <a class="stars-1">★</a>
+ <a class="stars-1">★</a>
+ 
+ <div class="customer-comment">
+   aaaaaaaaaaaaaaaaaaaaa<br>
+   aaaaaaaaaaaaaaaaaaaaa
+ </div>
+</div>
+</div>
+  <script>//数のカウントアップ
+   var field = document.getElementById("number-field");
+   var typeName = document.getElementById("type");
+ 
+   var setType = function(val) {
+     typeName.innerText = typeof val;
+   }
+ 
+   field.addEventListener("input", function(e) {
+     var value = e.target.value;
+     if (value < 0) {
+       e.target.value = 0; // 値が0未満の場合、値を0に設定します
+       value = 0; // 値の変数を更新します
+     }else if (value > 10) {
+      e.target.value = 10; // 値が10を超える場合、値を10に設定します
+      value = 10; // 値の変数を更新します
+    }
+     setType(value);
+   })
+ 
+   window.onload = function() {
+     field.value = 1;// 1からスタート
+     setType(field.value);
+   }
+ </script>
+
+
+
+
+   <footer>
+      <p>&copy; 2024 中原大學資訊管理學系</p>
+      <p> 瀏覽人數：77人</p>
+   </footer>
+</body>
+</html>
