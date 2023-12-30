@@ -136,7 +136,7 @@ ul.list {
 .item {
   text-align: center;
  
-  font-size: 23px;
+  font-size: 20px;
 
 }
 
@@ -265,7 +265,7 @@ background-color: #e5863d;
 .products-item {
   width: 20%;
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
 }
 .products-item p {
   transition: color 0.3s; /* 色の変化をアニメーション化 */
