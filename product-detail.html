@@ -5,6 +5,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>商品詳細</title>
    <link rel="stylesheet" type="text/css" href="style.css">
+   <script src="script.js"></script>
 </head>
 
 <body>
@@ -31,14 +32,16 @@
     
     <div class="product-detail">
       <img src="strawberry-daihuku.jpg">
-         <a class="product-name">大福草莓<br></a>
+         <a class="product-name">草莓大福<br></a>
          <a class="product-price">售價<br></a>
          <a class="product-NT">NT$:40<br></a>
          <a class="product-number"> 數量<br></a>
          <a class="how-many"><input type="number" id="number-field">
          個</a><br>
          <a class="explanation">商品説明：<br></a>
-         <a class="explanation-word">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>aaaaaaaaaaaaa<br>aaaaaaaaaaaaaaaaaaaaa</a> <br>
+         <a class="explanation-word">
+          外層是麻糬，裡面填滿了紅豆和草莓，是一種讓人感覺飽足的美食。
+          每一個都很用心，草莓選用了來自栃木的高級草莓，甜度不輸給紅豆。
         <a href="#" class="add-cart">加入購物車</a><br></div>
 <div class="review-column">
 <div class="review">
@@ -55,14 +58,14 @@
         </span>
       </div>
    <div class="content">
-   comment:<br></div> 
+   内容:<br></div> 
    <textarea name="ID" type="text"class="write-content"></textarea>
    <div class="review-button">
    <button class="send"><a href="#">送出</a></button>
  <button class="cancel"><a href="#">取消</a></button>
 </div></div>
 <div class="customer-reviews">
- <div class="customer-title">comment</div>
+ <div class="customer-title">評論</div>
    <div class="customer-name">久保匠生</div>
  <a class="stars-1">★</a>
  <a class="stars-1">★</a>
@@ -71,8 +74,7 @@
  <a class="stars-1">★</a>
  
  <div class="customer-comment">
-   aaaaaaaaaaaaaaaaaaaaa<br>
-   aaaaaaaaaaaaaaaaaaaaa
+  第一次吃到日本的草莓大福，很好吃~
  </div>
  <div class="customer-name">久保匠</div>
  <a class="stars-1">★</a>
@@ -82,8 +84,7 @@
  <a class="stars-2">★</a>
  
  <div class="customer-comment">
-   aaaaaaaaaaaaaaaaaaaaa<br>
-   aaaaaaaaaaaaaaaaaaaaa
+  第二次吃到日本的草莓大福，很好吃~
  </div>
  <div class="customer-name">久保</div>
  <a class="stars-1">★</a>
@@ -93,40 +94,36 @@
  <a class="stars-1">★</a>
  
  <div class="customer-comment">
-   aaaaaaaaaaaaaaaaaaaaa<br>
-   aaaaaaaaaaaaaaaaaaaaa
+  第三次吃到日本的草莓大福，很好吃~
  </div>
+
 </div>
 </div>
-  <script>//数のカウントアップ
-   var field = document.getElementById("number-field");
-   var typeName = document.getElementById("type");
- 
-   var setType = function(val) {
-     typeName.innerText = typeof val;
-   }
- 
-   field.addEventListener("input", function(e) {
-     var value = e.target.value;
-     if (value < 0) {
-       e.target.value = 0; // 値が0未満の場合、値を0に設定します
-       value = 0; // 値の変数を更新します
-     }else if (value > 10) {
-      e.target.value = 10; // 値が10を超える場合、値を10に設定します
-      value = 10; // 値の変数を更新します
-    }
-     setType(value);
-   })
- 
-   window.onload = function() {
-     field.value = 1;// 1からスタート
-     setType(field.value);
-   }
- </script>
+<script>/*product-detail */
 
+var field = document.getElementById("number-field");
+var typeName = document.getElementById("type");
 
+var setType = function(val) {
+  typeName.innerText = typeof val;
+}
 
+field.addEventListener("input", function(e) {
+  var value = e.target.value;
+  if (value < 0) {
+    e.target.value = 0; // 値が0未満の場合、値を0に設定します
+    value = 0; // 値の変数を更新します
+  }else if (value > 10) {
+   e.target.value = 10; // 値が10を超える場合、値を10に設定します
+   value = 10; // 値の変数を更新します
+ }
+  setType(value);
+})
 
+window.onload = function() {
+  field.value = 1;// 1からスタート
+  setType(field.value);
+}</script>
    <footer>
       <p>&copy; 2024 中原大學資訊管理學系</p>
       <p> 瀏覽人數：77人</p>
