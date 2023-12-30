@@ -828,6 +828,20 @@ border-radius:  15px 15px 0px 0px;
 .payment:hover{
 background-color: rgb(255, 123, 145);
 } 
+.top{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+
+}
+.top img{
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+.top img:hover{
+  opacity: 0.6;
+}
 /*copyright*/
     footer {
       text-align: center; /* テキストを中央寄せにする */
