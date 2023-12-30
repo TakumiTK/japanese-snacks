@@ -2,9 +2,11 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
 }
 
 body{
+
   background-image: url(background.jpg);
   background-color:rgba(255, 255, 255, 0.326);
   background-blend-mode:lighten;
@@ -14,9 +16,10 @@ body{
    margin-right: calc(50% - 50vw);
 	margin-left: calc(50% - 50vw);
    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 影の設定 */
-   font-family: 'cursive_font_name', cursive; /* 筆記体のフォントを指定 */
+ 
 }
 header{
+font-weight: bold;
    text-align: center;
    background-color: rgba(248, 128, 148, 0.53);
 }
@@ -50,8 +53,8 @@ ul.list {
       text-decoration: none;
    }
    .logo{
-    max-width: 120px;
-    border-radius: 60px;
+    max-width: 150px;
+    border-radius: 50%;
     transition: 1.0s ;
    }
   
@@ -108,36 +111,37 @@ ul.list {
   background-color:rgba(248, 128, 148, 0.53);
   border-radius: 10px;
   padding: 2em;
-  margin: 0% 10% 10% 10%;
+  margin: 0% 5% 10% 5%;
   text-align: center;
-  -webkit-transition: 0.5s ease-in-out;
    transition: 0.5s ease-in-out;
 }
 .recommend:hover{
-  background-color: rgb(194, 89, 106);
+  background-color: rgb(235, 126, 144);
   color: #fff;
 }
+
 .recommend-title{
   font-size: 55px;
   margin: 4%;
 }
 
-.cookie-img {
+.snack-img {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+
 }
 
 .item {
-  width: 20%;
   text-align: center;
-  margin: 5%;
-  
+ 
+  font-size: 23px;
+
 }
 
+
 .item img {
-  width: 100%;
   height: auto;
   transition: 1.0s ;
 }
@@ -147,10 +151,9 @@ ul.list {
 /*網頁簡介*/
 .profile {
   background-color: #ffffff8a;
-  margin: 4% 10% 4% 10%;
+  margin: 4% 15%;
   padding-top: 2%;
   border-radius: 100px;
-  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 .profile:hover{
@@ -165,7 +168,8 @@ ul.list {
 }
 .profile-word{
   font-size: 25px;
-  padding: 4% 10% 4% 10%;
+  padding: 4% 10%;
+
 }
 .cookie-img {
   display: flex;
@@ -188,7 +192,13 @@ ul.list {
 .item img:hover {
   opacity: 0.5 ;
 }
-/*shangpin*/
+.item p {
+  transition: color 0.3s; /* 色の変化をアニメーション化 */
+}
+.item p:hover {
+  color: #fff; /* マウスオーバー時の色 */
+}
+/*商品一欄*/
 .products-title{
   font-size: 55px;
   padding-left: 3%;
@@ -197,9 +207,9 @@ ul.list {
 
 .products{
   border: 3px solid #fff;
-  margin: 4% 10% 4% 10%;
+  margin: 4% 10%;
   background-color: #cccccc9a;
-  -webkit-transition: 0.5s ease-in-out;
+
   transition: 0.5s ease-in-out;
   
 }
@@ -209,9 +219,9 @@ ul.list {
 }
 .products-1{
   border: 3px solid #a058fe;
-  margin: 4% 10% 4% 10%;
+  margin: 4% 10% ;
   background-color: #a058fe4c;
-  -webkit-transition: 0.5s ease-in-out;
+
   transition: 0.5s ease-in-out;
   
 }
@@ -221,9 +231,9 @@ ul.list {
 }
 .products-2{
   border: 3px solid #a0561d;
-  margin: 4% 10% 4% 10%;
+  margin: 4% 10% ;
 background-color: #a0561d6b;
--webkit-transition: 0.5s ease-in-out;
+
 transition: 0.5s ease-in-out;
 
 }
@@ -233,9 +243,9 @@ background-color: #e5863d;
 }
 .products-3{
   border: 3px solid #f8ff2d;
-  margin: 4% 10% 4% 10%;
+  margin: 4% 10%;
   background-color: #f8ff2d4d;
-  -webkit-transition: 0.5s ease-in-out;
+
   transition: 0.5s ease-in-out;
   
 }
@@ -255,6 +265,7 @@ background-color: #e5863d;
 .products-item {
   width: 20%;
   text-align: center;
+  font-size: 30px;
 }
 .products-item p {
   transition: color 0.3s; /* 色の変化をアニメーション化 */
@@ -315,7 +326,7 @@ background-color: #e8f6ff9b;
 .explanation-word{
   display: flex;
   margin-left: 55%;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .add-cart{
@@ -356,7 +367,7 @@ border-radius:  15px 15px 0px 0px;
 
 .content{
 padding-left: 5%;
-  font-size: 40px;
+  font-size: 30px;
 }
 .stars{
 margin-left: 25%;
@@ -448,7 +459,7 @@ border-radius:  15px 15px 0px 0px;
   margin-top:40px;
 }
 .customer-comment{
-  font-size: 25px;
+  font-size: 20px;
 }
 
   /*關於我們*/
@@ -457,14 +468,18 @@ border-radius:  15px 15px 0px 0px;
     font-size: 60px;
     padding-top: 5%;
     padding-bottom: 5%;
+    
   }
   .info-bg{
     background-color: rgba(255, 255, 255, 0.5);
     margin: 10%;
     border-radius: 100px;
-   
-    }
-    
+    transition: 0.5s ease-in-out;
+  }
+  .info-bg:hover{
+   background-color: rgb(255, 255, 255);
+   color: rgb(178, 61, 81);
+  }
   .info {
     display: flex;
     
@@ -473,8 +488,8 @@ border-radius:  15px 15px 0px 0px;
   .own-info{
     text-align: center; /* 文字を中央揃え */
     transition: 1.0s ;
-   
     margin-bottom: 10%;
+ 
   }
   
   .own-img  {
@@ -493,10 +508,55 @@ border-radius:  15px 15px 0px 0px;
     width: 10%;
   }
   .own-info p {
-  font-size: 25px;
+  font-size: 30px;
     
   }
- 
+  .about-store-info{
+    background-color:rgba(248, 128, 148, 0.53);
+    display: flex;
+    margin: 10%;
+    border-radius: 50px;
+    transition: 0.5s ease-in-out;
+  }
+  .about-store-info:hover{
+   background-color: rgb(235, 126, 144);
+   color: rgb(255, 255, 255);
+  }
+  .google-maps,.store-info{
+    flex: 1; /* 等しい幅で横に並べる */
+  }
+
+  .google-maps{
+    position: relative;
+    margin: 5%;
+
+  }
+
+ .google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.contact-us{
+  font-size: 50px;
+}
+.store-info{
+  margin: 5%;
+  font-size: 25px;
+}
+.contact-name{
+  border-radius: 10px;
+}
+.write-content-2{
+  height: 300px;
+  width: 100%;
+  resize: vertical; /* 垂直方向のリサイズを許可 */
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
 /*member-info*/
 .record{
   background-color: rgba(248, 128, 148, 0.53);
@@ -525,7 +585,7 @@ border-radius:  15px 15px 0px 0px;
       font-size: 30px;
       margin-top: 5%;
       padding: 10px;
-      margin-left: 90px;
+      margin-left: 170px;
     }
     .purchase-part-number{
       font-size: 30px;
@@ -717,7 +777,7 @@ border-radius:  15px 15px 0px 0px;
   font-size: 40px;
   margin-top: 5%;
   padding: 10px;
-  margin-left: 40px;
+  margin-left: 68px;
 }
 .cart-number{
   font-size: 40px;
@@ -755,8 +815,7 @@ border-radius:  15px 15px 0px 0px;
   }
   
 .payment {
-  background-color: #f45092;
-  color: white;
+   background-color: pink;
   border: none;
   cursor: pointer;
   padding: 10px;
@@ -767,19 +826,22 @@ border-radius:  15px 15px 0px 0px;
   
 }
 .payment:hover{
-  background-color: #f60a68;
+background-color: rgb(255, 123, 145);
 } 
 /*copyright*/
     footer {
       text-align: center; /* テキストを中央寄せにする */
       padding:  60px 0px 30px 0px; /* フッター内の余白を追加 */
-    
+  
       font-size: 25px;
       background-color: rgba(248, 128, 148, 0.53);
    }
 
 
 
+
+
+   
 
 
    
