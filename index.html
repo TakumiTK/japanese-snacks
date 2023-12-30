@@ -5,35 +5,11 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>japanese snack</title>
    <link rel="stylesheet" type="text/css" href="style.css">
+   <script src="script.js"></script>
 </head>
 
 <body>
-   <script>
-      window.addEventListener('load', function () {
-         viewSlide('.slide img');
-      });
-      
-      function viewSlide(className, slideNo = -1) {
-         let imgArray = document.querySelectorAll(className);
-         if (slideNo >= 0) {
-            imgArray[slideNo].style.opacity = 0;
-         }
-         slideNo++;
-         if (slideNo >= imgArray.length) {
-            slideNo = 0;
-         }
-         imgArray[slideNo].style.opacity = 1;
-         // 時間を固定したい場合、ここでミリ秒を指定する
-         let msec = 4000; //4秒
-         setTimeout(function () {
-            viewSlide(className, slideNo);
-         }, msec);
-      }
-   </script>
-
    <header>
-     
-
    <div class="box">
       <ul class="list">
         <li><a href="profile.html">網頁簡介</a></li>
@@ -64,17 +40,20 @@
          <div class="item">
             <a href="product-detail.html">
                <img src="simple-dango.png" alt="">
-            <p>NT100</p></a>
+            <p >售價：NT90</p>
+            <p>三色糰子</p></a>
          </div>
          <div class="item">
             <a href="product-detail.html">
                <img src="mitarashi-dango.jpg" alt="">
-            <p>aaa</p></a>
+               <p >售價：NT100</p>
+               <p>御手洗糰子</p></a>
          </div>
          <div class="item">
             <a href="product-detail.html">
                <img src="simple-yokan.jpg" alt="">
-            <p>aaa</p></a>
+               <p >售價：NT130</p>
+               <p>原味羊羹</p></a>
          </div>
       </div>
 </div>
