@@ -19,7 +19,7 @@ body{
  
 }
 header{
-font-weight: bold;
+font-weight: bold;/*字の太さ*/
    text-align: center;
    background-color: rgba(248, 128, 148, 0.53);
 }
@@ -481,16 +481,16 @@ border-radius:  15px 15px 0px 0px;
   }
   .info {
     display: flex;
-    
   }
  
   .own-info{
     text-align: center; /* 文字を中央揃え */
     transition: 1.0s ;
-    margin-bottom: 10%;
- 
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
   }
-  
+
   .own-img  {
     width: 250px;
     height: auto;
@@ -509,6 +509,10 @@ border-radius:  15px 15px 0px 0px;
   .own-info p {
   font-size: 30px;
     
+  }
+  .thoughts{
+    font-size: 20px;
+
   }
   .about-store-info{
     background-color:rgba(248, 128, 148, 0.53);
@@ -554,6 +558,7 @@ border-radius:  15px 15px 0px 0px;
   resize: vertical; /* 垂直方向のリサイズを許可 */
   border-radius: 10px;
   margin-bottom: 20px;
+  font-size: 25px;
 }
 
 /*member-info*/
